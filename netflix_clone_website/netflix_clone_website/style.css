@@ -1,0 +1,353 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+@font-face {
+    font-family:poppins;
+    src: url(Poppins-Medium.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: 1400px, 100vw;
+    background-repeat: no-repeat;
+    height: 686px;
+    position: relative;
+}
+
+.main .box {
+    height: 99vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 62px;
+}
+
+nav svg {
+    width: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    height: calc(100% - 62px);
+    /* height: 100% ;   it was 100 than nav bar height was 62 so to adjust 100% height 62 pixels of nav bar are minused */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 23px;
+}
+
+.hero>:nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.sepration {
+    height: 7px;
+    background-color: rgb(75, 75, 75);
+
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(91, 90, 90, 0.194);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: 300px;
+
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.7);
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border: 1px solid rgba(246, 246, 246, 0.5);
+
+
+
+
+}
+
+/* .hero-buttons :first-child{ instead of .main input like also can be done by using .hero-button class and input as a first child 
+    background-color: rgba(23,23,23,0.2); 
+    border-radius: 4px;
+    padding: 9px 35px;
+    font-size: 12px;
+
+
+    
+
+ */
+
+.first {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 50px;
+    right: 1px;
+
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+
+}
+
+section.first>div :nth-child(2) {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    color: white;
+    transition: all 1s ease-out;
+    display: flex;
+    background-color: grey;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+footer .questions {
+    padding: 34px 0;
+  
+}
+
+
+@media screen and (max-width: 1300px) {
+
+   /* body{
+    background-color: red;
+   } */
+    nav{
+        max-width: 90vw;
+    }
+    .main .box{
+
+        height: 103vh;
+    }
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        /* padding: 75px 0; */
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+   
+ 
+
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+
+}
