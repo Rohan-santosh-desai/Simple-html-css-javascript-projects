@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- aria-hidden="true" -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+       
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the Worlds Largest University</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, suscipit.ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos commodi quibusdam fugit libero! Dolores, numquam nisi. Adipisci facilis placeat temporibus officia et ex laboriosam. ipsum dolor sit amet consectetur adipisicing elit. A alias facere cum neque sapiente consectetur dicta esse ipsum quaerat praesentium! Mollitia temporibus itaque impedit obcaecati, cumque, nam, veniam architecto ab velit iusto sapiente nihil maiores tenetur a ipsa illo in.
+
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam earum hic ea maiores ducimus nam laboriosam facilis perspiciatis,<br> repudiandae possimus, quam in nesciunt voluptatem, est ex blanditiis quo ut?</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>&copy All Rights Reserved 2024</p>
+  </section>
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+
+        }
+
+        
+    </script>
+
+</body>
+
+
+</html>
