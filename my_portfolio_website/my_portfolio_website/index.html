@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: poppins;
+            src: url(fonts/Poppins-Medium.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(19, 19, 83);
+            color: white;
+            font-family: Poppins;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(32, 32, 116);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        .link ul li {
+            list-style: none;
+         
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+        }
+        
+        nav ul li a:hover {
+            color: rgb(238, 72, 238)
+           
+        }
+        .link ul li a:hover {
+            color: rgb(238, 72, 238)
+           
+        }
+
+        .link ul li a{
+            text-decoration: none;
+            color: azure;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 2.5rem;
+
+        }
+
+
+        .rightsection img {
+            /* background-color: red; */
+            width: 80%;
+
+
+
+        }
+
+        .purple {
+            color: rgb(238, 72, 238)
+        }
+
+        #element {
+            color: rgb(238, 72, 238)
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            font-family: poppins;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto;
+            font-family: poppins;
+            height: 30vh
+        }
+        .fourthsection{
+            max-width: 80vw;
+            margin: auto;
+            font-family: poppins;
+            height: 60vh
+        }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            margin: 40px 84px;
+            height: 1.2px;
+        }
+
+
+        .image-top {
+            width: 44px;
+            position: relative;
+            top: -45px;
+            left: -21px;
+
+
+        }
+
+        .vertical-title {
+
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 22px;
+
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(244, 84, 244);
+            width: 150px;
+            font-size: 20px;
+
+
+        }
+
+        footer {
+
+            background-color: rgb(15, 15, 54);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .text-center {
+            padding: 12px 0;
+            text-align: center;
+            color: grey;
+        }
+
+
+        .btn {
+            font-family: Poppins;
+            text-transform: uppercase;
+            color: #222;
+            background-color: #fff;
+            letter-spacing: 0.1rem;
+            display: inline-block;
+            font-weight: 700;
+            transition: all 0.3s linear;
+            border: 2px solid #222;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            color: rgb(244, 84, 244);
+            background: #222;
+        }
+
+        #linkedin a{
+            text-decoration: none;
+            color: azure;
+ 
+
+        }
+        #linkedin a:hover{
+            color: rgb(238, 72, 238)
+ 
+
+        }
+
+
+/* Fade-in animation */
+/* section {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+} */
+
+/* Scroll to top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: rgb(238, 72, 238);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+}
+
+
+   
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="left"> Rohan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstsection ">
+            <div class="leftsection">
+                Hii , My Name is <span class="purple">Rohan</span>
+                <div> I am a Passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="my_portfolio_website/my_portfolio_website/Rohan Santosh Desai resume.pdf" class="btn"  download="Rohan_Santosh_Desai_resume.pdf">Download Resume</a>
+                    
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+                
+            </div>
+
+
+        </section>
+        <hr>
+        <section id="about" class="secondsection">
+            <h1>About Me</h1>
+            <div class="box">
+                <div class="vertical"><img class="image-top" src="university.png">
+                    <div class="vertical-title">
+                        School (2006-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        St Marys's High School
+                        <span>78%</span>
+                        
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="university (1).png">
+                    <div class="vertical-title">
+                        Higher Secondary (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Rosary Higher Secondary School
+                        <span>Commerce 79%</span>
+                        
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="degree.png">
+                    <div class="vertical-title">
+                        Under Graduation (2021-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Rosary College Of Commerce and Arts
+                        <span>BCA 7.71 CGPA</span>
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="online-degree (1).png">
+                    <div class="vertical-title">
+                        Post Graduation (2024-2026)
+                        
+                    </div>
+                    <div class="vertical-desc">
+                        Currently Pursuing MCA from Chandigarh University Online
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png">
+                    <div class="vertical-title">
+                        Work Experience
+                    </div>
+                    <div class="vertical-desc">
+                        Fresher
+                        (Aspiring Full stack developer)
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+        <hr>
+        <section id="projects"  class="thirdsection" >
+            <div>
+                <h1>Tap to view Projects</h1>
+                <br>
+               
+                <a href="https://github.com/Rohan-santosh-desai" class="btn" target="_blank">Visit Github</a>
+                
+            </div>
+            
+        </section>
+        <hr>
+        <section id="contact"class="fourthsection" >
+            <div>
+                <h1>Contact</h1>
+                <br>
+                 
+            </div>
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                       
+                        <span>
+                            <h5>Address</h5>
+                            <h5>Laxette Road,Sf Classic Building</h5>
+                            <h5>Margao ,Goa ,India</h5>
+    
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                     
+                        <span>
+                            <h5>Phone</h5>
+                            <h5>+91 9975542832</h5>
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                  
+                        <span>
+                            <h5>Email Id</h5>
+                            <h5>rohansantoshdesai@gmail.com</h5>
+    
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                  
+                       
+                        <span id="linkedin">
+                            <h5>linkedin Profile</h5>
+                            <a href="https://www.linkedin.com/in/rohan-santosh-desai-076073323/">rohan-santosh-desai-076073323</a>
+    
+                        </span>
+                    </div>
+                </div>
+               
+    
+            </div>
+            
+        </section>
+
+        
+        
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rohan's Web Developer Portfolio</h3>
+            </div>
+            <div class="footer-second link">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-third link">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth link">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            Copyright &#169 www.rohansportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        
+   
+
+
+        var typed = new Typed('#element', {
+            //   strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+            // strings: ['Web Developer', 'UI/UX Desiginer', 'App Developer'],
+            strings: ['Front End Web Developer', 'Aspiring Full stack Developer'],
+            typeSpeed: 50,
+        });
+
+        
+
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+    
+    // Scroll animations: fade in sections when scrolling
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the section is in view
+    });
+    
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+    
+    // Scroll to top button
+    const scrollToTopBtn = document.createElement('button');
+    scrollToTopBtn.innerText = "Top";
+    scrollToTopBtn.classList.add('scroll-to-top');
+    document.body.appendChild(scrollToTopBtn);
+    
+    // Show or hide the button based on scrolling
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
